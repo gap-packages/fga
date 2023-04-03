@@ -11,9 +11,8 @@ SetPackageInfo( rec(
 
 PackageName := "FGA",
 Subtitle := "Free Group Algorithms",
-Version := "1.4.0",
-#        dd/mm/yyyy
-Date := "23/03/2018",
+Version := "1.5.0-DEV",
+Date := "23/03/2018", # dd/mm/yyyy format
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -21,20 +20,17 @@ Persons := [
     LastName      := "Sievers",
     FirstNames    := "Christian",
     IsAuthor      := true,
-    IsMaintainer  := true,
+    IsMaintainer  := false,
     Email         := "c.sievers@tu-bs.de",
-#    WWWHome       := "",
-#    PostalAddress := Concatenation(
-#            [ "Christian Sievers\n", 
-#              "Fachbereich Mathematik und Informatik\n",
-#              "Institut Computational Mathematics\n",
-#              "Technische Universit\"at Braunschweig\n",
-#              "Pockelsstr. 14\n",
-#              "D-38106 Braunschweig,\n",
-#              "Germany" ]),
-#    Place         := "Braunschweig",
-#    Institution   := "TU Braunschweig"
-    ) ],
+  ),
+  rec(
+    LastName      := "GAP Team",
+    FirstNames    := "The",
+    IsAuthor      := false,
+    IsMaintainer  := true,
+    Email         := "support@gap-system.org",
+  ),
+],
 
 Status := "accepted",
 
@@ -60,7 +56,7 @@ README_URL     := Concatenation( ~.PackageWWWHome, "README" ),
 PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
 SourceRepository := rec( 
   Type := "git", 
-  URL := "https://github.com/chsievers/fga"
+  URL := "https://github.com/gap-packages/fga"
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 
@@ -121,6 +117,12 @@ TestFile := "tst/testall.g",
 
 Keywords := ["free groups", "inverse finite automata",
              "basic coset enumeration",
-             "finite presentation of the automorphism group of a free group"]
+             "finite presentation of the automorphism group of a free group"],
+
+AutoDoc := rec(
+    TitlePage := rec(
+        TitleComment := "<E>Note:</E> This version of FGA is a fork of the original FGA, maintained by the GAP Team.",
+    ),
+),
 
 ));

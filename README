@@ -21,6 +21,11 @@ In addition, it provides generators and a finite presentation for the
 automorphism group of a finitely generated free group and allows to
 write any such automorphism as word in these generators.
 
+Note that this version of FGA is a fork of the original FGA package
+by Christian Sievers, available at <https://github.com/chsievers/fga>.
+This fork is maintained by the GAP team to incorporate various
+minor changes.
+
 
 Requirements:
 -------------
