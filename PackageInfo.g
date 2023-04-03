@@ -95,13 +95,10 @@ AbstractHTML :=
 PackageDoc := rec(
   # use same as in GAP            
   BookName  := "FGA",
-  ArchiveURLSubset := ["doc", "htm"],
-  HTMLStart := "htm/chapters.htm",
+  ArchiveURLSubset := ["doc"],
+  HTMLStart := "doc/chap0_mj.html",
   PDFFile   := "doc/manual.pdf",
-  # the path to the .six file used by GAP's help system
   SixFile   := "doc/manual.six",
-  # a longer title of the book, this together with the book name should
-  # fit on a single text line (appears with the '?books' command in GAP)
   LongTitle := "Free Group Algorithms",
 ),
 
@@ -127,8 +124,3 @@ Keywords := ["free groups", "inverse finite automata",
              "finite presentation of the automorphism group of a free group"]
 
 ));
-
-
-#############################################################################
-##
-#E
