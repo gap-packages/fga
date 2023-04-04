@@ -52,7 +52,7 @@ PackageWWWHome := "http://www.icm.tu-bs.de/ag_algebra/software/FGA/",
 
 ArchiveFormats := ".tar.gz",
 ArchiveURL     := Concatenation( ~.PackageWWWHome, "FGA-", ~.Version ),
-README_URL     := Concatenation( ~.PackageWWWHome, "README" ),
+README_URL     := Concatenation( ~.PackageWWWHome, "README.md" ),
 PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
 SourceRepository := rec( 
   Type := "git", 

@@ -1,10 +1,7 @@
+FGA - Free Group Algorithms
+===========================
 
-                             FGA
-
-                     Free Group Algorithms
-
-                        A GAP 4 package
-
+A GAP 4 package
 
 Contents:
 ---------
@@ -48,8 +45,8 @@ Installation:
 -------------
 
 The installation follows standard GAP rules.
-So the normal way to install is to unpack the archive in the `pkg'
-directory, which will create an `fga' subdirectory.
+So the normal way to install is to unpack the archive in the `pkg`
+directory, which will create an `fga` subdirectory.
 
 
 Enjoy!
