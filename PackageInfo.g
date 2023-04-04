@@ -11,8 +11,8 @@ SetPackageInfo( rec(
 
 PackageName := "FGA",
 Subtitle := "Free Group Algorithms",
-Version := "1.5.0-DEV",
-Date := "23/03/2018", # dd/mm/yyyy format
+Version := "1.5.0",
+Date := "04/04/2023", # dd/mm/yyyy format
 License := "GPL-2.0-or-later",
 
 Persons := [
@@ -50,8 +50,6 @@ AcceptDate := "05/2005",
 
 PackageWWWHome := "https://gap-packages.github.io/fga/",
 
-ArchiveFormats := ".tar.gz",
-ArchiveURL     := Concatenation( ~.PackageWWWHome, "FGA-", ~.Version ),
 README_URL     := Concatenation( ~.PackageWWWHome, "README.md" ),
 PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
 SourceRepository := rec( 
@@ -59,6 +57,11 @@ SourceRepository := rec(
   URL := "https://github.com/gap-packages/fga"
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
+
+ArchiveFormats := ".tar.gz",
+ArchiveURL     := Concatenation( ~.SourceRepository.URL,
+                                 "/releases/download/v", ~.Version,
+                                 "/fga-", ~.Version ),
 
 ##  Here you  must provide a short abstract explaining the package content 
 ##  in HTML format (used on the package overview Web page) and an URL 
