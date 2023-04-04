@@ -17,7 +17,7 @@
   
   
             [33X[0;10Y[13XNote:[113X This version of FGA is a fork of the original FGA,
-            maintained by the GAP Team[133X
+            maintained by the GAP Team.[133X
   
   
   

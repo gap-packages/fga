@@ -1,5 +1,5 @@
 name: FGA
-version: "1.4.0"
+version: "1.5.0-DEV"
 license: "GPL-2.0-or-later"
 date: 2018-03-23
 description: |
@@ -10,18 +10,18 @@ authors:
       url: mailto:c.sievers@tu-bs.de
 
 maintainers:
-    - name: Christian Sievers
-      url: mailto:c.sievers@tu-bs.de
+    - name: The GAP Team
+      url: mailto:support@gap-system.org
 
 GAP: ">=4.8"
 
-www: http://www.icm.tu-bs.de/ag_algebra/software/FGA/
-readme: README
-packageinfo: http://www.icm.tu-bs.de/ag_algebra/software/FGA/PackageInfo.g
+www: https://gap-packages.github.io/fga/
+readme: README.md
+packageinfo: https://gap-packages.github.io/fga/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: http://www.icm.tu-bs.de/ag_algebra/software/FGA/FGA-1.4.0.tar.gz
+      url: https://gap-packages.github.io/fga/FGA-1.5.0-DEV.tar.gz
 
 abstract: |
     The <span class="pkgname">FGA</span> package installs methods for    computations with finitely generated subgroups of free groups and    provides a presentation for their automorphism groups.
@@ -33,28 +33,26 @@ keywords: |
     free groups, inverse finite automata, basic coset enumeration, finite presentation of the automorphism group of a free group.
 citeas: |
     <p class='BibEntry'>
-    [<span class='BibKey'>Sie18</span>]   <b class='BibAuthor'>Sievers, C.</b>,
+    [<span class='BibKey'>ST18</span>]   <b class='BibAuthor'>Sievers, C. and GAP Team, T.</b>,
      <i class='BibTitle'>FGA, Free Group Algorithms,
-             Version 1.4.0</i>
+             Version 1.5.0-DEV</i>
      (<span class='BibYear'>2018</span>)<br />
     (<span class='BibNote'>Refereed GAP package</span>),
-    <span class='BibHowpublished'><a href="http://www.icm.tu-bs.de/ag_algebra/software/FGA/">http://www.icm.tu-bs.de/ag_algebra/software/FGA/</a></span>.
+    <span class='BibHowpublished'><a href="https://gap-packages.github.io/fga/">https://gap-packages.github.io/fga/</a></span>.
     </p>
     
 
 bibtex: |
-    @misc{ FGA1.4.0,
-      author =           {Sievers, C.},
-      title =            {{FGA}, Free Group Algorithms, {V}ersion 1.4.0},
+    @misc{ FGA1.5.0-DEV,
+      author =           {Sievers, C. and GAP Team, T.},
+      title =            {{FGA}, Free Group Algorithms, {V}ersion 1.5.0-DEV},
       month =            {Mar},
       year =             {2018},
       note =             {Refereed GAP package},
-      howpublished =     {\href                                   {http://www.icm.tu-bs.de/ag_algebra/software/FGA/}
-                          {\texttt{http://www.icm.tu-bs.de/}\discretionary
-                          {}{}{}\texttt{ag{\textunderscore}algebra/}\discretionary
-                          {}{}{}\texttt{software/}\discretionary {}{}{}\texttt{FGA/}}},
+      howpublished =     {\href                                                {https://gap-packages.github.io/fga/}
+                          {\texttt{https://gap-packages.github.io/}\discretionary {}{}{}\texttt{fga/}}},
       keywords =         {free  groups; inverse finite automata; basic coset enumeration; finite presentation of the
                           automorphism group of a free group},
-      printedkey =       {Sie18}
+      printedkey =       {ST18}
     }
 

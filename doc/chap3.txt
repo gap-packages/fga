@@ -23,9 +23,12 @@
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XLoadPackage( "fga" );[127X[104X
     [4X[28X-----------------------------------------------------------------------------[128X[104X
-    [4X[28XLoading  FGA 1.4.0 (Free Group Algorithms)[128X[104X
+    [4X[28XLoading  FGA 1.5.0-DEV (Free Group Algorithms)[128X[104X
     [4X[28Xby Christian Sievers (c.sievers@tu-bs.de).[128X[104X
-    [4X[28XHomepage: http://www.icm.tu-bs.de/ag_algebra/software/FGA/[128X[104X
+    [4X[28Xmaintained by:[128X[104X
+    [4X[28X   The GAP Team (support@gap-system.org).[128X[104X
+    [4X[28XHomepage: https://gap-packages.github.io/fga/[128X[104X
+    [4X[28XReport issues at https://github.com/gap-packages/fga/issues[128X[104X
     [4X[28X-----------------------------------------------------------------------------[128X[104X
     [4X[28Xtrue[128X[104X
   [4X[32X[104X
