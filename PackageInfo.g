@@ -48,7 +48,7 @@ AcceptDate := "05/2005",
 ##  and updating of the package in the GAP distribution.
 #
 
-PackageWWWHome := "http://www.icm.tu-bs.de/ag_algebra/software/FGA/",
+PackageWWWHome := "https://gap-packages.github.io/fga/",
 
 ArchiveFormats := ".tar.gz",
 ArchiveURL     := Concatenation( ~.PackageWWWHome, "FGA-", ~.Version ),
