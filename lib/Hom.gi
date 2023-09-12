@@ -8,7 +8,7 @@
 ##
 
 
-InstallMethod( PreImagesRepresentative,
+InstallMethod( PreImagesRepresentativeNC,
     "for homomorphisms of free groups",
     FamRangeEqFamElm,
     [ IsToFpGroupGeneralMappingByImages, IsElementOfFreeGroup ],
