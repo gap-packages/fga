@@ -19,7 +19,7 @@ gap> RepresentativeAction(g,f.2*f.1,f.1*f.2);
 f1^-1*f2^-1*f1^-1
 gap> RepresentativeAction(Group(f.1*f.2),f.1*f.2,f.2*f.1);
 fail
-gap> # bug reportet by Ignat Soroko, example slightly modified
+gap> # bug reported by Ignat Soroko, example slightly modified
 gap> a:=f.1;; b:=f.2;;
 gap> g := Group( a^b, a^(b^-1), b^4 );;
 gap> h := Group( b^2, a^b, a*b*a );;
@@ -69,4 +69,23 @@ gap> homFree:=GroupHomomorphismByImages(F, F, [], []);
 [  ] -> [  ]
 gap> PreImagesRepresentative(homFree, One(F));
 <identity ...>
+gap> # Manual example from section 2.3
+gap> ua := f.1^2*f.2^2;; ub := f.1^2*f.2;;
+gap> u := Group( ua, ub );;
+gap> g := FreeGroup( "a", "b" );;
+gap> hom := GroupHomomorphismByImages( g, u,
+>             GeneratorsOfGroup(g),
+>             GeneratorsOfGroup(u) );
+[ a, b ] -> [ f1^2*f2^2, f1^2*f2 ]
+gap> # how can f.1^2 be expressed?
+gap> PreImagesRepresentativeNC( hom, f.1^2 );
+b*a^-1*b
+gap> last ^ hom; # check this
+f1^2
+gap> ub * ua^-1 * ub; # another check
+f1^2
+gap> PreImagesRepresentativeNC( hom, f.1 ); # try f.1
+fail
+gap> f.1 in u;
+false
 gap> STOP_TEST( "FGA.tst", 100000);
