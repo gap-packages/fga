@@ -7,6 +7,11 @@
 #Y 2003 - 2012
 ##
 
+##  introducing globally the NC version of PreImagesRepresentative 
+if not IsBound( PreImagesRepresentativeNC ) then 
+    BindGlobal( "PreImagesRepresentativeNC", PreImagesRepresentative ); 
+fi; 
+
 ReadPackage( "FGA", "lib/util.gd" );
 ReadPackage( "FGA", "lib/Iterated.gd" );
 ReadPackage( "FGA", "lib/Autom.gd" );
