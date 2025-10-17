@@ -88,8 +88,8 @@ internally, user functions are shown instead.
 <P/>
 
 <ManSection>
-<Oper Name="Normalizer" Arg="u1, u2"/>
-<Oper Name="Normalizer" Arg="u, elm"/>
+<Oper Name="Normalizer" Arg="u1, u2" Label="for two groups"/>
+<Oper Name="Normalizer" Arg="u, elm" Label="for a group and an element"/>
 <Description>
 The first variant returns the normalizer of the finitely generated
 subgroup <A>u2</A> in <A>u1</A>.
@@ -115,8 +115,8 @@ exists.
 </ManSection>
 
 <ManSection>
-<Oper Name="Centralizer" Arg="u, u2"/>
-<Oper Name="Centralizer" Arg="u, elm"/>
+<Oper Name="Centralizer" Arg="u, u2" Label="for two groups"/>
+<Oper Name="Centralizer" Arg="u, elm" Label="for a group and an element"/>
 <Description>
 returns the centralizer of <A>u2</A> or <A>elm</A> in the finitely generated
 subgroup <A>u</A> of a free group.
