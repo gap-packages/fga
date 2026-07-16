@@ -11,8 +11,8 @@ SetPackageInfo( rec(
 
 PackageName := "FGA",
 Subtitle := "Free Group Algorithms",
-Version := "1.5.0",
-Date := "04/04/2023", # dd/mm/yyyy format
+Version := "1.5.1",
+Date := "16/07/2026", # dd/mm/yyyy format
 License := "GPL-2.0-or-later",
 
 Persons := [

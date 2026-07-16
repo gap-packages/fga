@@ -36,7 +36,7 @@ If &GAP; does not autoload, you can request the package with the
 <Example><![CDATA[
 gap> LoadPackage( "fga" );
 -----------------------------------------------------------------------------
-Loading  FGA 1.5.0-DEV (Free Group Algorithms)
+Loading  FGA 1.5.1 (Free Group Algorithms)
 by Christian Sievers (c.sievers@tu-bs.de).
 maintained by:
    The GAP Team (support@gap-system.org).
